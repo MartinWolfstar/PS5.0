@@ -11,6 +11,6 @@ package fr.insa.schmitt.ps5_0;
 public class Hello {
     public static void main(String[] args){
         System.out.println("coucou");
-        System.out.println("Theo tu es odieux");
+        System.out.println("Theo tu es odieu");
     }
 }
