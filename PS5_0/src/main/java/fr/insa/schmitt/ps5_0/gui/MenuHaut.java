@@ -120,9 +120,9 @@ public class MenuHaut extends MenuBar{
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Help");
                 alert.setHeaderText(null);
-                alert.setContentText("Application Tréllis\n"
+                alert.setContentText("Application BDD\n"
                         +"Pour tout aide, vous pouvez vous référer à ce site:\n\n"
-                        +"https://applicationtreillis.carrd.co\n"
+                        +"https://XXXXX.carrd.co\n"
                         +"°\n");
 
                 alert.showAndWait();
@@ -137,9 +137,9 @@ public class MenuHaut extends MenuBar{
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("A propos");
                 alert.setHeaderText(null);
-                alert.setContentText("Application Tréllis\n"
-                        +"Application créée par Maëlle Pernot, Antoine Peere et Théo Schmitt\n"
-                        +"lien pour les droits d'utilisation de l'icon: https://icons8.com/icon/115633/robot"
+                alert.setContentText("Application BDD\n"
+                        +"Application créée par Aurore Binder et Théo Schmitt\n"
+                        +"lien pour les droits d'utilisation de l'icon: https://XXX.com"
                         + "°\n");
 
                 alert.showAndWait();

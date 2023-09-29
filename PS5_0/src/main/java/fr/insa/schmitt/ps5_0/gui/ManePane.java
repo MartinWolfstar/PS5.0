@@ -13,22 +13,22 @@ import javafx.stage.Stage;
  */
 public class ManePane extends BorderPane{
  
-    //private MenuHaut menuBar; 
-    //private Ruban ruban;
-    //private DessinCanvas dessin;
+    private MenuHaut menuBar; 
+    private Ruban ruban;
+    private DessinCanvas dessin;
     private BarreOutilshaut BarreOutilshaut;
-    //private BarreOutilsGauche BarreOutilsGauche;
+    private BarreOutilsGauche BarreOutilsGauche;
     
     public ManePane() {
 
-        //this.dessin = new DessinCanvas(this);
-        //this.menuBar = new MenuHaut(this);
-        //this.ruban = new Ruban(this);
+        this.dessin = new DessinCanvas(this);
+        this.menuBar = new MenuHaut(this);
+        this.ruban = new Ruban(this);
         this.BarreOutilshaut = new BarreOutilshaut(this);
-        //this.BarreOutilsGauche = new BarreOutilsGauche(this);
+        this.BarreOutilsGauche = new BarreOutilsGauche(this);
         
         this.setTop(this.BarreOutilshaut);
-        //this.setLeft(this.BarreOutilsGauche);
-        //this.setCenter(this.dessin);
+        this.setBottom(this.BarreOutilsGauche);
+        this.setCenter(this.dessin);
     }
 }

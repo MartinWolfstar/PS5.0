@@ -56,8 +56,8 @@ public class DessinCanvas extends Pane{
     
     public void redrawAll(){
         GraphicsContext context = this.getRealCanvas().getGraphicsContext2D();
-        //context.setFill(Color.LIGHTGRAY);
-        //context.fillRect(0,0, this.realCanvas.getWidth(), this.realCanvas.getHeight());    
+        context.setFill(Color.LIGHTGRAY);
+        context.fillRect(0,0, this.realCanvas.getWidth(), this.realCanvas.getHeight());    
         
         //----------gestion des zooms:
         context.setTransform(new Affine());
@@ -65,10 +65,10 @@ public class DessinCanvas extends Pane{
         //this.zoneVue.setxMax(this.getRealCanvas().getWidth());
         //this.zoneVue.setyMax(this.getRealCanvas().getHeight());
         
-        context.setGlobalAlpha(0.8);
+        /*context.setGlobalAlpha(0.8);
         context.setFill(Color.CHOCOLATE);
         context.fillText("1 carreau = 50 unités", 20, 20);
-        context.setGlobalAlpha(1);
+        context.setGlobalAlpha(1);*/
         
         //activer cette partie permet d'ajouter la direction (et son beug)
         //Transform curTrans = this.main.getZoneVue().fitTransform(this.zoneVue);
@@ -87,7 +87,7 @@ public class DessinCanvas extends Pane{
             for (Trellis t: select){
                 t.dessineSelection(context);
             }
-        }
+        }*/
         
         context.setStroke(Color.ORCHID);
         context.setGlobalAlpha(0.4);
@@ -95,7 +95,7 @@ public class DessinCanvas extends Pane{
            context.strokeLine(i,0,i,5000); 
            context.strokeLine(0,i,5000,i);
         }
-        context.setGlobalAlpha(1);*/
+        context.setGlobalAlpha(1);
         
     }
 
