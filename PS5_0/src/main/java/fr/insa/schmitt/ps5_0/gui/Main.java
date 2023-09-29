@@ -17,8 +17,13 @@ import javafx.scene.control.Label ;
 public class Main extends Application{
     @Override
     public void start (Stage fen){
-        Scene sc = new Scene(new Label("coucou"));
+        
+        ManePane main = new ManePane();
+        
+        //Scene sc = new Scene(main, 1000, 700);
+        Scene sc = new Scene(new Label("hey"));
         fen.setScene(sc);
+        fen.setTitle("Application BDD");
         fen.show(); 
         
     }
@@ -27,3 +32,4 @@ public class Main extends Application{
     }
 
 }
+
