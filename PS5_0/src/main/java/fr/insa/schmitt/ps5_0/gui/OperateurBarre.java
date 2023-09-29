@@ -16,7 +16,7 @@ import javafx.scene.layout.HBox;
  *
  * @author schmi
  */
-public class TerrainBarre {
+public class OperateurBarre {
     
     private Tab tab;
     private Button ajouter;
@@ -24,10 +24,10 @@ public class TerrainBarre {
     
     private ManePane main;
 
-    public TerrainBarre(ManePane main) {
+    public OperateurBarre(ManePane main) {
         this.main = main;
-        tab = new Tab("Machine");
-        lll = new Label("lldn");
+        tab = new Tab("Opérateur");
+        lll = new Label("Opérateur 12");
         buildTab();
     }
 
