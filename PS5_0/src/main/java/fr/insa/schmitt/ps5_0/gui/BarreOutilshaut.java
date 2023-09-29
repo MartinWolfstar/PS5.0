@@ -19,7 +19,7 @@ public class BarreOutilshaut extends VBox{
     //private Button zoomIn;
     //private Button zoomOut;
     private MenuHaut menuBar; 
-    //private Ruban ruban;
+    private Ruban ruban;
     //private VBox line;
     
     private ManePane main;
@@ -30,13 +30,13 @@ public class BarreOutilshaut extends VBox{
         //this.zoomIn = new Button("Zoom *2");
         //this.zoomOut = new Button("Zoom /2");
         this.menuBar = new MenuHaut(main);
-        //this.ruban = new Ruban(main);
+        this.ruban = new Ruban(main);
         //this.line = new VBox();
         
         //OutilsFx.setSimpleBorder(line, Color.GRAY, 2);
          
         //this.getChildren().addAll(menuBar,ruban.get(),line);
-        this.getChildren().addAll(menuBar);
+        this.getChildren().addAll(menuBar,ruban.get());
         //this.getChildren().addAll(couleur,zoomIn,zoomOut);
         //OutilsFx.setSimpleBorder(this, Color.BLACK, 2);
         

@@ -14,12 +14,14 @@ public class Ruban extends TabPane{
     
     private TabPane ruban;
     private ManePane main;
-    private Accueil accueil;
+    //private Accueil accueil;
+    private TerrainBarre terrainBarre;
 
     public Ruban(ManePane main) {
 
         this.main = main;
-        this.accueil = new Accueil(main);
+        //this.accueil = new Accueil(main);
+        this.terrainBarre = new TerrainBarre(main);
         ruban = new TabPane();
         buildTabs();
     }
@@ -34,7 +36,8 @@ public class Ruban extends TabPane{
 
     private void buildTabs() {
         
-        ruban.getTabs().addAll(getAccueil().get());
+        //ruban.getTabs().addAll(getTerrainBarre().get(), getAccueil().get());
+        ruban.getTabs().addAll(getTerrainBarre().get());
         //ruban.getTabs().addAll(accueil.get());
     }
 
@@ -48,7 +51,14 @@ public class Ruban extends TabPane{
     /**
      * @return the accueil
      */
-    public Accueil getAccueil() {
+    /*public Accueil getAccueil() {
         return accueil;
+    }*/
+
+    /**
+     * @return the terrainBarre
+     */
+    public TerrainBarre getTerrainBarre() {
+        return terrainBarre;
     }
 }
