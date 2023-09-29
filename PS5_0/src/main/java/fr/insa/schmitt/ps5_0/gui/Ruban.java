@@ -17,6 +17,7 @@ public class Ruban extends TabPane{
     //private Accueil accueil;
     private MachineBarre machineBarre;
     private OperateurBarre operateurBarre;
+    private GraphBarre graphBarre;
 
     public Ruban(ManePane main) {
 
@@ -24,6 +25,7 @@ public class Ruban extends TabPane{
         //this.accueil = new Accueil(main);
         this.machineBarre = new MachineBarre(main);
         this.operateurBarre = new OperateurBarre(main);
+        this.graphBarre = new GraphBarre(main);
         ruban = new TabPane();
         buildTabs();
     }
@@ -39,7 +41,7 @@ public class Ruban extends TabPane{
     private void buildTabs() {
         
         //ruban.getTabs().addAll(getTerrainBarre().get(), getAccueil().get());
-        ruban.getTabs().addAll(getMachineBarre().get(),getOperateurBarre().get());
+        ruban.getTabs().addAll(getMachineBarre().get(),getOperateurBarre().get(),getGraphBarre().get());
         //ruban.getTabs().addAll(accueil.get());
     }
 
@@ -65,5 +67,8 @@ public class Ruban extends TabPane{
     }
     public OperateurBarre getOperateurBarre() {
         return operateurBarre;
+    }
+    public GraphBarre getGraphBarre() {
+        return graphBarre;
     }
 }
