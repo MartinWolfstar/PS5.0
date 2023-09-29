@@ -16,7 +16,7 @@ public class ManePane extends BorderPane{
     //private MenuHaut menuBar; 
     //private Ruban ruban;
     //private DessinCanvas dessin;
-    //private BarreOutilshaut BarreOutilshaut;
+    private BarreOutilshaut BarreOutilshaut;
     //private BarreOutilsGauche BarreOutilsGauche;
     
     public ManePane() {
@@ -24,10 +24,10 @@ public class ManePane extends BorderPane{
         //this.dessin = new DessinCanvas(this);
         //this.menuBar = new MenuHaut(this);
         //this.ruban = new Ruban(this);
-        //this.BarreOutilshaut = new BarreOutilshaut(this);
+        this.BarreOutilshaut = new BarreOutilshaut(this);
         //this.BarreOutilsGauche = new BarreOutilsGauche(this);
         
-        //this.setTop(this.BarreOutilshaut);
+        this.setTop(this.BarreOutilshaut);
         //this.setLeft(this.BarreOutilsGauche);
         //this.setCenter(this.dessin);
     }
