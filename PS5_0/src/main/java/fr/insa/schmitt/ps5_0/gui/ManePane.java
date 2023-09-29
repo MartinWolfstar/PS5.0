@@ -28,7 +28,7 @@ public class ManePane extends BorderPane{
         this.BarreOutilsGauche = new BarreOutilsGauche(this);
         
         this.setTop(this.BarreOutilshaut);
-        this.setBottom(this.BarreOutilsGauche);
+        this.setLeft(this.BarreOutilsGauche);
         this.setCenter(this.dessin);
     }
 }
