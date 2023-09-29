@@ -20,8 +20,8 @@ public class Main extends Application{
         
         ManePane main = new ManePane();
         
-        //Scene sc = new Scene(main, 1000, 700);
-        Scene sc = new Scene(new Label("hey"));
+        Scene sc = new Scene(main, 1000, 700);
+        //Scene sc = new Scene(new Label("hey"));
         fen.setScene(sc);
         fen.setTitle("Application BDD");
         fen.show(); 
